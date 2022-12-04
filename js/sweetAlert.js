@@ -1,3 +1,56 @@
+//const { default: Swal } = require("sweetalert2");
+
+
+
+/* INCIO ENVIO DE EMAIL */
+const logo = document.getElementById('imgLogoContainer');
+logo.addEventListener('click', function (){
+    Swal.fire({
+        icon: 'info',
+        title: '<h1 font-size="14px">¿Hola?</h1>',
+        text: '¡Envíame un email contándome tus mejoras desde que usas la App!',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#fa5454',
+        confirmButtonText: '¡Aceptar!',
+        cancelButtonText: 'Cancelar',
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+        allowEnterKey: false,
+        width: '80%',
+    }).then((result) => {
+        if (result.isConfirmed) {
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                width: '70%',
+                showConfirmButton: false,
+                timer: 2000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+            })
+            Toast.fire({
+                icon: 'success',
+                title: '¡Viajando hacia página de contacto!'
+            })
+            setTimeout(function aceptaEmail() {
+                window.location.href ="https://horttiz.github.io/F.O.C.U.S/paginas/contact.html";
+            }, 2000);
+
+        } else if (result.dismiss){
+            setTimeout(function cancelaEmail(){
+                console.log("cancelado");
+            });
+        }
+    })
+})
+/* FIN ENVIO DE EMAIL */
+
+
+/* INCIO REPRODUCCIÓN DE RUIDO MARRÓN */
 const noiseSong = document.getElementById('noise');
 onNoise.addEventListener('click', function () {
     Swal.fire({
@@ -24,3 +77,4 @@ onNoise.addEventListener('click', function () {
         }
     })
 });
+/* FIN REPRODUCCIÓN RUIDO MARRÓN */
