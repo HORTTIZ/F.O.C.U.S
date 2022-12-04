@@ -37,4 +37,4 @@ mail($destinatario,$asunto,$cuerpo,$headers);
 echo "Correo enviado"; 
 ?> 
 
-<a href="index.html">Volver a inicio</a>
+<a href="contact.html">Volver a inicio</a>
