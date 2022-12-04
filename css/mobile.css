@@ -132,7 +132,7 @@ header .content-header1 {
   color: white;
   border-end-end-radius: 50%;
 }
-.container-logo #imgLogo {
+.container-logo a #imgLogo {
   width: 4rem;
   height: 4rem;
   margin: 0 auto;
