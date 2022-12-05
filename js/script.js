@@ -15,3 +15,8 @@ window.addEventListener("load", function(event) {
     containerLoad.style.display = 'none';
     containerMain.style.overflow = 'visible';
 });
+
+
+// Cronometro para modo Gym, suena en 1 minuto como maximo de un ejercicio
+    // El funcionamiento es sencillo, se temporiza por segundos. El segundo deseaso a ser el que active la campana del tiempo estimado tanto en modo gym como en modo estudio, debe ser restado en 6 para que concuerde con el setTimeout.
+    
