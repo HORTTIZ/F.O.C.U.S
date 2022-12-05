@@ -37,7 +37,7 @@ logo.addEventListener('click', function (){
                 title: '¡Viajando hacia página de contacto!'
             })
             setTimeout(function aceptaEmail() {
-                window.location.href ="https://horttiz.github.io/F.O.C.U.S/paginas/contact.html";
+                window.location.href ="https://horttiz.github.io/CONTACT/";
             }, 2000);
 
         } else if (result.dismiss){
