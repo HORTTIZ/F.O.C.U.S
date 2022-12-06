@@ -18,6 +18,39 @@ p, h1, h2, h3, h4, h5, h6, span, img, .stopwatch {
   user-select: none;
 }
 
+/* INICIO NOTES*/
+#container-notes {
+  display: grid;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  min-height: 40rem;
+  background: blue;
+  top: 0;
+}
+#container-notes #content-notes {
+  display: grid;
+  place-items: center;
+  width: 90%;
+  height: 100%;
+  background: orange;
+}
+#content-notes #iframeNotes {
+  width: 100%;
+  height: 100%;
+}
+#container-notes #btnClose {
+  width: 4rem;
+  position: absolute;
+  height: 4rem;
+  margin: 0 auto;
+  bottom: 1rem;
+  right: 1.5rem;
+  border: none;
+  border-radius: 50%;
+}
+/* FIN DE NOTES*/
+
 /* INICIO ANIMATION LOAD*/
 #container-load {
   width: 100%;
