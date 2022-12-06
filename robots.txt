@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Disallow: /fsg604b9.txt
+Disallow: /googled33fbdb399070f2f.html
+
+# Host
+Host: https://horttiz.github.io/FOCUS/
+
+# Sitemaps
+Sitemap: https://raw.githubusercontent.com/HORTTIZ/FOCUS/gh-pages/sitemap.xml
