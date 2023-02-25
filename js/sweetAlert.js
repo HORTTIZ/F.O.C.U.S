@@ -37,7 +37,7 @@ logo.addEventListener('click', function (){
                 title: '¡Viajando hacia página de contacto!'
             })
             setTimeout(function aceptaEmail() {
-                window.location.href = "https://horttiz.github.io/CONTACT/";
+                window.location.href = "https://xulianortiz.github.io/CONTACT/";
             }, 2000);
 
         } else if (result.dismiss){

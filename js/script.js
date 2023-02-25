@@ -1,3 +1,23 @@
+// Notes
+const note = document.getElementById('note');
+const containerNotes = document.getElementById('container-notes');
+const cerrar = document.getElementById('cerrarNote');
+
+note.addEventListener('click', function () {
+    containerNotes.style.display = 'grid';
+    containerMain.style.filter = 'blur(5px)';
+    containerNotes.style.zIndex = '2';
+})
+
+cerrar.addEventListener('click', function () {
+    containerNotes.style.display = 'none';
+    containerMain.style.filter = 'blur(0px)';
+})
+
+
+//
+
+
 const onNoise = document.getElementById('imgNoise');
 
 const containerMain = document.getElementById('container-main');
