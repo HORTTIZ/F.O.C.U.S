@@ -3,6 +3,7 @@
 
 
 /* INCIO ENVIO DE EMAIL */
+/*
 const logo = document.getElementById('imgLogoContainer');
 logo.addEventListener('click', function (){
     Swal.fire({
@@ -46,7 +47,7 @@ logo.addEventListener('click', function (){
             });
         }
     })
-})
+})*/
 /* FIN ENVIO DE EMAIL */
 
 
