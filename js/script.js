@@ -37,7 +37,17 @@ window.addEventListener("load", function(event) {
     const mensaje = document.getElementById('mensaje');
 
     const frases = [
-        "La imaginación es más importante que el conocimiento. El conocimiento se limita a todo lo que ahora sabemos y comprendemos, mientras que la imaginación abarca el mundo entero y todo lo que alguna vez sabremos y comprenderemos. - Albert Einstein",
+        "Si quieres seguir obteniendo lo que estás obteniendo, sigue haciendo lo que estás haciendo. - Proverbio",
+        "El arte de vivir se acerca más al de la lucha, que al de la danza. - Marco Aurelio",
+        "Preocúpate, resueltamente, como romano y varón, de hacer lo que tienes entre manos con puntual y no fingida gravedad, con amor, libertad y justicia, y procúrate tiempo libre para liberarte de todas las demás distracciones. - Marco Aurelio (Meditaciones)",
+        "...No toma en consideración el elogio de tales hombres que ni consigo mismo están satisfechos. - Marco Aurelio (Meditaciones)",
+        "Ni actúes contra tu voluntad, ni de manera insociable, ni sin reflexión. - Marco Aurelio (Meditaciones)",
+        "...En realidad no querías estar con otro, sino que no podías estar contigo. - Séneca (De la brevedad de la vida)",
+        "Aquellos que verdaderamente lideran son capaces de crear un grupo de seguidores que no actúan porque estén dominados, sino porque se sienten motivados. - Simon Sinek (Empieza con el porqué)",
+        "Si hay algo que es una amenaza para ti y tu bienestar, tienes que hacer algo al respecto. - Reflexiones Personales",
+        "Es un punto de supervivencia; neutralizar la amenaza. - Reflexiones Personales",
+        "Sé tu propio mayordomo... Cuando se desarrolla una relación entre el yo presente y el yo futuro, el primero sirve al segundo... Prioriza las necesidades del yo futuro antes que las tuyas. - Chase Hughes",
+        "Entre más responsabilidades tienes, más sentido tiene tu vida. Entre mayor sea el grado de responsabilidad que tú aceptes soportar de manera voluntaria, más rica será tu vida. - Jordan Peterson",
         // Agrega más mensajes aquí
     ];
 
