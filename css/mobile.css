@@ -228,10 +228,14 @@ header .content-header2 {
   width: 80%;
   height: auto;
   text-align: center;
-  background: transparent;
+  background: #FF213C;
   margin: 0 auto;
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 1rem;
+  font-size: 1.4rem;
+  padding: 1.5rem;
+  border-radius: 2.5rem;
+  color: #ffffff;
+  font-weight: bold;
 }
 
 /* FINAL CONTAINER QUOTE*/
@@ -246,7 +250,7 @@ header .content-header2 {
   place-items: center;
   background: #d9d9d9;
   position: fixed;
-  top: 19.3rem;
+  top: 2.3rem;
   right: 0;
   border: none;
   border-radius: 5rem 0 0 5rem;
@@ -456,3 +460,68 @@ header .content-header2 {
 
 /*FIN LISTA DE TAREAS*/
 /*FIN TO DO*/
+
+/* Frases */
+.maquina-escribir {
+  display: grid;
+  overflow: hidden;
+  text-align: center;
+  margin: 0 auto;
+  place-items: center;
+  animation: escribir 3s steps(30) forwards;
+  min-height: 1rem;
+  height: auto;
+}
+#mensaje {
+  width: 70%;
+  min-height: 1rem;
+  height: auto;
+  font-size: 1.6rem;
+}
+
+@keyframes escribir {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Media Query's*/
+
+@media (min-width: 800px) {
+  .container-main {
+    display:grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2,1fr);
+  }
+  header{
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+  }
+  .container-quote {
+    grid-row: 3;
+  }
+  .separador {
+    grid-column: 1;
+  }
+  .container {
+    grid-column: 2;
+    grid-row-start: 2;
+  }
+  .maquina-escribir {
+    grid-column: 1;
+    grid-row: 2;
+  }
+}
+@media (min-width: 300px) and (max-width: 799px) {
+  .maquina-escribir {
+    display:inline-table;
+  }
+  #mensaje {
+    display: inline-block;
+    margin: 5rem auto;
+  }
+}

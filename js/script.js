@@ -34,9 +34,31 @@ window.addEventListener("load", function(event) {
     loader.style.display = 'none';
     containerLoad.style.display = 'none';
     containerMain.style.overflow = 'visible';
-});
+    const mensaje = document.getElementById('mensaje');
 
+    const frases = [
+        "La imaginación es más importante que el conocimiento. El conocimiento se limita a todo lo que ahora sabemos y comprendemos, mientras que la imaginación abarca el mundo entero y todo lo que alguna vez sabremos y comprenderemos. - Albert Einstein",
+        // Agrega más mensajes aquí
+    ];
 
-// Cronometro para modo Gym, suena en 1 minuto como maximo de un ejercicio
-    // El funcionamiento es sencillo, se temporiza por segundos. El segundo deseaso a ser el que active la campana del tiempo estimado tanto en modo gym como en modo estudio, debe ser restado en 6 para que concuerde con el setTimeout.
-    
+    function obtenerFraseAleatoria() {
+        const indice = Math.floor(Math.random() * frases.length);
+        return frases[indice];
+    }
+
+    function mostrarFraseAleatoria() {
+        const mensajeDiv = document.getElementById("mensaje");
+        mensajeDiv.textContent = "";
+
+        const frase = obtenerFraseAleatoria();
+
+        for (let i = 0; i < frase.length; i++) {
+        setTimeout(() => {
+            mensajeDiv.textContent += frase[i];
+        }, i * 70); // Controla la velocidad de escritura
+        }
+    }
+
+  // Mostrar una frase al cargar la página
+    mostrarFraseAleatoria();
+    });   
