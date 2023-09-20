@@ -388,6 +388,7 @@ header .content-header2 {
   display: inline-block;
   background-color: transparent;
   margin: 0 auto;
+  color: #b7b7b7;
 }
 .title-todo {
   font-weight: lighter;
