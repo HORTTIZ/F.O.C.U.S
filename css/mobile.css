@@ -387,7 +387,7 @@ header .content-header2 {
   font-size: 1.4rem;
   display: inline-block;
   background-color: transparent;
-  margin: 1rem 0 1rem 2rem;
+  margin: 0 auto;
 }
 .title-todo {
   font-weight: lighter;
