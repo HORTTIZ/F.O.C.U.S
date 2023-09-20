@@ -383,11 +383,14 @@ header .content-header2 {
   height: auto;
   background: transparent;
 }
-.container-title-todo h2 {
-  font-size: 4rem;
+.container-title-todo p {
+  font-size: 1.4rem;
   display: inline-block;
   background-color: transparent;
   margin: 1rem 0 1rem 2rem;
+}
+.title-todo {
+  font-weight: lighter;
 }
 .inputVal{
   width: 22.5rem;
@@ -523,5 +526,10 @@ header .content-header2 {
   #mensaje {
     display: inline-block;
     margin: 5rem auto;
+  }
+  .inputValue .container-title-todo {
+    display: grid;
+    width: 80%;
+    margin: 5rem auto 2rem;
   }
 }
