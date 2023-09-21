@@ -518,7 +518,6 @@ header .content-header2 {
   .maquina-escribir {
     grid-column: 1;
     grid-row: 2;
-    margin: 0 0 10rem 0;
   }
 }
 @media (min-width: 300px) and (max-width: 799px) {
