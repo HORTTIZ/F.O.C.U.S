@@ -520,7 +520,7 @@ header .content-header2 {
     grid-row: 2;
   }
   #mensaje {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 @media (min-width: 300px) and (max-width: 799px) {
